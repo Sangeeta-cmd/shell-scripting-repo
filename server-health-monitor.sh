@@ -183,11 +183,11 @@ check-network(){
 # Summary
 # =======================================================================================================
 Summary(){
-	header-section "********************************"
-	header-section "****** Health Check Completed****"
-	if [ $ISSUES -eq 0]; then
-		echo " Health Check - Disk Usage, CPU Load, Memory, Network Connectivity All are Passed - SErver running fine"
-	        log " OK " " Health Check - Disk Usage, CPU Load, Memory, Network Connectivity All are Passed - SErver running fine"
+	header-section "----------------------------------------"
+	header-section "------- Health Check Completed -------"
+	if [ $ISSUES -eq 0 ]; then
+		echo " Health Check - Disk Usage, CPU Load, Memory, Network Connectivity All are Passed - Server running fine"
+	        log " OK " " Health Check - Disk Usage, CPU Load, Memory, Network Connectivity All are Passed - Server running fine"
 	else
 		echo " Found $ISSUES issue(s) - Check Configuration "
 		log "Fail" " Found $ISSUES issue(s) - Check Configuration "
