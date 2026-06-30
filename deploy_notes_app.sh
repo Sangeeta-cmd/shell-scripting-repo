@@ -16,7 +16,6 @@ require_packages(){
 }
 
 installation(){
-	sudo chown $USER ///var/run/docker.sock
 	sudo systemctl enable docker
 	sudo systemctl enable nginx
 	sudo systemctl restart docker
